@@ -44,8 +44,6 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
 
 
 def mySettings():
-    ''' Define your trading system settings here '''
-
     settings = {}
     
     settings['markets']  = ['CASH','F_AD', 'F_BO', 'F_BP', 'F_C', 'F_CC', 'F_CD',
