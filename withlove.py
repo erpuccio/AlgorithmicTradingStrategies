@@ -33,7 +33,7 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
                    if CLOSE[-1, markets] > settings['high'][markets]:
                       settings['high'][markets] = CLOSE[-1, markets]
            if settings['high'][markets] > 0:
-               # If market is off the high off its high by 15%
+               # If market is off the high off its high by 15% exit position
                if (((CLOSE[-1,markets] - settings['high'][markets]) / settings['high'][markets]) 
                <= - .15):
                    settings['relativePos'][markets] = 0
