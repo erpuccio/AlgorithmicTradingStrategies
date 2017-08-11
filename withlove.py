@@ -60,8 +60,6 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
 
 
 def mySettings():
-    ''' Define your trading system settings here '''
-
     settings = {}
     settings['markets']  = ['CASH','F_ES','F_TY']
     settings['beginInSample'] = '20000110'
