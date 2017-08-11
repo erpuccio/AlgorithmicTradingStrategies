@@ -6,7 +6,7 @@ Created on Fri Aug  4 12:28:41 2017
 # If the price of a security is greater than the 500 day moving average and makes
 # a fifty two week high, the program enters a logn positon in the security/market
 # If if the security meets the previous criteria, but suffers a 15% peak to trough
-# loss I sell the security.
+# loss I exit the position.
 # The two secruities/markets I use here are the sp500 mini and the 10 year treasury note
 
 import numpy
@@ -33,7 +33,7 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
                    if CLOSE[-1, markets] > settings['high'][markets]:
                       settings['high'][markets] = CLOSE[-1, markets]
            if settings['high'][markets] > 0:
-               # If market is off the high off its high by 15% exit position
+               # If market is off the high by 15% exit position
                if (((CLOSE[-1,markets] - settings['high'][markets]) / settings['high'][markets]) 
                <= - .15):
                    settings['relativePos'][markets] = 0
