@@ -41,8 +41,6 @@ def market_dictionary():
 
 
 def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, settings):
-    ''' This system uses trend following techniques to allocate capital into the desired equities'''
-
     #initalzie the basics
     nMarkets = CLOSE.shape[1]
     pos = numpy.zeros(nMarkets)
