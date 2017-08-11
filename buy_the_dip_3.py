@@ -40,12 +40,10 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
 
 
 def mySettings():
-    ''' Define your trading system settings here '''
 
     settings= {}
 
-    # S&P 100 stocks
-    
+    # S&P 100 stocks 
     settings['markets']= ['CASH','PEP',
     'AMGN','AMZN','APA','APC','AXP','BA','BAC','BAX','BK','BMY','BRKB','C',
     'CAT','CL','CMCSA','COF','COP','COST','CSCO','CVS','CVX','DD','DIS','DOW',
