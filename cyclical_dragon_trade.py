@@ -9,8 +9,7 @@
 import numpy
 
 def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, settings):
-    ''' This system uses trend following techniques to allocate capital into the desired equities'''
-    
+  
     
     nMarkets=CLOSE.shape[1]
     pos=numpy.zeros(nMarkets) 
