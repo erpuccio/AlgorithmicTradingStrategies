@@ -50,8 +50,6 @@ def myTradingSystem(DATE, OPEN, HIGH, LOW, CLOSE, VOL, exposure, equity, setting
 
 
 def mySettings():
-    ''' Define your trading system settings here '''
-
     settings = {}
     
     # Futures Contracts
