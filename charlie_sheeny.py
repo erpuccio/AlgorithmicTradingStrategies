@@ -7,7 +7,7 @@ Created on Wed Aug 16 16:25:47 2017
 """
 
 # This program does pair trades. It makes a ratio from two securities and
-# goes long the overvalued security and goes short the undervalued security;
+# goes short the overvalued security and goes long the undervalued security;
 # in essence, hoping to profit from converging securities. 
 
 import numpy
